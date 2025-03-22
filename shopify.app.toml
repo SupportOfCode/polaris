@@ -1,0 +1,36 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "09542c386f40bae81f6c5b82c49f80f6"
+application_url = "https://valve-useful-definitions-purchases.trycloudflare.com"
+embedded = true
+name = "second-app"
+handle = "second-app-135"
+
+[build]
+include_config_on_deploy = true
+automatically_update_urls_on_dev = true
+
+[webhooks]
+api_version = "2025-01"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/uninstalled" ]
+  uri = "/webhooks/app/uninstalled"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/scopes_update" ]
+  uri = "/webhooks/app/scopes_update"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://valve-useful-definitions-purchases.trycloudflare.com/auth/callback",
+  "https://valve-useful-definitions-purchases.trycloudflare.com/auth/shopify/callback",
+  "https://valve-useful-definitions-purchases.trycloudflare.com/api/auth/callback"
+]
+
+[pos]
+embedded = false
