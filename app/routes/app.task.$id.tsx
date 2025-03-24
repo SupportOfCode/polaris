@@ -14,9 +14,7 @@ import { useTaskStore } from "../store";
 import {
   createTask,
   deleteTask,
-  deleteTaskPro,
   getTask,
-  getTaskPro,
   updateTask,
 } from "../utils/tasks.server";
 import { ArrowUpIcon, DeleteIcon } from "@shopify/polaris-icons";

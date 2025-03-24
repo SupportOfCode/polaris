@@ -27,6 +27,7 @@ export default function App() {
         <Link to="/app/tasks">Home page</Link>
         <Link to="/app/task/new">Task page</Link>
         <Link to="/app/additional">Additional page</Link>
+        <Link to="/app/button">Demo Button</Link>
       </NavMenu>
       <Outlet />
     </AppProvider>

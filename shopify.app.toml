@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "09542c386f40bae81f6c5b82c49f80f6"
-application_url = "https://valve-useful-definitions-purchases.trycloudflare.com"
+application_url = "https://citizens-images-procurement-arising.trycloudflare.com"
 embedded = true
 name = "second-app"
 handle = "second-app-135"
@@ -27,9 +27,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://valve-useful-definitions-purchases.trycloudflare.com/auth/callback",
-  "https://valve-useful-definitions-purchases.trycloudflare.com/auth/shopify/callback",
-  "https://valve-useful-definitions-purchases.trycloudflare.com/api/auth/callback"
+  "https://citizens-images-procurement-arising.trycloudflare.com/auth/callback",
+  "https://citizens-images-procurement-arising.trycloudflare.com/auth/shopify/callback",
+  "https://citizens-images-procurement-arising.trycloudflare.com/api/auth/callback"
 ]
 
 [pos]
