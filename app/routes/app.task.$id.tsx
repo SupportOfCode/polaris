@@ -41,7 +41,7 @@ export const action: ActionFunction = async ({ request, params }) => {
   if (request.method === "POST") await createTask(data);
   if (request.method === "PUT") await updateTask(params.id || "", data);
   if (request.method === "DELETE") await deleteTask(params.id ?? "");
-  return redirect("/app/tasks");
+  return redirect("/app");
 };
 
 export default function Task() {
@@ -98,7 +98,7 @@ export default function Task() {
       narrowWidth
       backAction={{
         onAction: () => {
-          navigate("/app/tasks");
+          navigate("/app");
           shopify.loading(true);
         },
       }}

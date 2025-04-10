@@ -401,7 +401,7 @@ export default function Tasks() {
       <Modal
         open={modalActive}
         onClose={() => setModalActive(false)}
-        title={`Are you sure you want to delete ${selectedResources.length} task(s)?`}
+        title={`Are you sure you want to delete ${selectedResources.length} products?`}
         primaryAction={{
           content: "Delete",
           destructive: true,
